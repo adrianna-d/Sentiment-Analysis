@@ -58,7 +58,7 @@ To run the project, follow the steps below:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/mrdaliselmi/Real-time-Tweets-Sentiment-Analysis-and-Emotion-Detection-Pipeline
+    git clone https://github.com/adrianna-d/Sentiment-Analysis.git
     ```
 
 2. Optional but encougraged: Create a virtual environment for the project:
