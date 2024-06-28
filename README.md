@@ -110,8 +110,9 @@ The model training and evaluation step includes the following steps:
 
 ### Real-time Data Fetching
 
-- **Twitter API**: Use the Twitter API to fetch real-time tweets.
-- **Tweepy**: Use the `tweepy` package to fetch tweets from the Twitter API.
+- **Twitter API**: Use the Twitter API to fetch real-time tweets (paid)
+- **Tweepy**: Use the `tweepy` package to fetch tweets from the Twitter API (you stil need to pay to X)
+- **WebScrapping**: use webstrapping like Apify
 - **Data Pre-processing**: Pre-process the fetched tweets using the same steps as well as the same vectorizer as the data pre-processing step.
 
 ### Prediction
