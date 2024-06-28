@@ -19,7 +19,7 @@ Final project for the **Data Science and Machine Learning**  bootcamp at IronHac
 
 Currently pulling real-time data from Twitter, and predicting emotions to generate insights in a local file with the goal to move it to the app.
 
-## Filesco
+## Files
 
 The project consists of the following files:
 
@@ -79,7 +79,7 @@ To run the project, follow the steps below:
 
 6. Runn the predictions_json.py with your json file to precidt emotions of taxt from the file.
 
-6. Run the app.py to run the app with predictions locally
+6. Run the app.py to with predictions locally
 
 <!-- PROJECT OVERVIEW: METHODOLOGY AND APPROACH -->
 ## Project overview: Methodology and Approach
