@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/35153.jpg'); /* Adjust the path based on your directory structure */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Ensure the body covers the entire viewport */
+        }
+        .result-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 80%; /* Adjust width as needed */
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        strong {
+            color: #5c2f16;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Emotion Prediction Results</h1>
+        <p>Input sentence: {{ text }}</p>
+        
+        {% for emotion in emotions %}
+        <h2>{{ emotion['emotion'] }}</h2>
+        <ul>
+            {% for top_emotion in emotion['top_emotions'] %}
+            <li>{{ top_emotion['emotion'] }}: {{ top_emotion['probability'] }}</li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+</body>
+</html>
